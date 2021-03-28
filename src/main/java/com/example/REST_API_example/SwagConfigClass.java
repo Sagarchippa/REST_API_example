@@ -1,0 +1,34 @@
+package com.example.REST_API_example;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import springfox.documentation.builders.PathSelectors;
+import springfox.documentation.builders.RequestHandlerSelectors;
+import springfox.documentation.service.ApiInfo;
+import springfox.documentation.service.Contact;
+import springfox.documentation.spi.DocumentationType;
+import springfox.documentation.spring.web.plugins.Docket;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@Configuration
+@EnableSwagger2
+public class SwagConfigClass {
+
+ @Bean
+ public Docket swaggeraAPIconfig() {
+	 return new Docket(DocumentationType.SWAGGER_2)
+			 .select()
+			 .paths(PathSelectors.any())
+			 .apis(RequestHandlerSelectors.basePackage("com.example"))
+			 .build().
+			 apiInfo(metaInfo());
+ }
+
+	private ApiInfo metaInfo() {
+       ApiInfo apiInfo=new ApiInfo(
+       		"Spring boot Rest API calls learning", "I AM SAGAR","1.0","www.google.com", "sagar chippa","www.codechef.com","www.google.com"
+	   );
+       return apiInfo;
+	}
+
+}
