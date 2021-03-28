@@ -21,9 +21,11 @@ public class RestApiExampleApplication {
 		System.out.println(m+"hello anna");
 		System.out.println("git changes happend1");
 		System.out.println("git changes happend2");
-		boolean st=context.isPrime(97);
+		boolean st=student.isPrime(97);
 		System.out.println(st);
 		System.out.println("kaka aagutalev kada");
+		st=student.isPerfect(28);
+		System.out.println(st+"IDI MAMULUGA LEDU GADA...program");
 	}
 
 }
