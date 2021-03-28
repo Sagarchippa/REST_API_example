@@ -56,4 +56,15 @@ public class Student {
             }
         }
     }
+
+    public boolean isPrime(int val){
+        int ok=0;
+        for(int i=2;i<=val/2;i++){
+            if(val%i==0){
+                ok=1;
+                break;
+            }
+        }
+        return (ok==0 ? true:false);
+    }
 }

@@ -19,6 +19,11 @@ public class RestApiExampleApplication {
         int m=input.nextInt();
         student.printPrimes(primes);
 		System.out.println(m+"hello anna");
+		System.out.println("git changes happend1");
+		System.out.println("git changes happend2");
+		boolean st=context.isPrime(97);
+		System.out.println(st);
+		System.out.println("kaka aagutalev kada");
 	}
 
 }
