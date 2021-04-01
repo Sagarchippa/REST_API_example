@@ -27,6 +27,7 @@ public class RestApiExampleApplication {
 		st=student.isPerfect(28);
 		System.out.println(st+"IDI MAMULUGA LEDU GADA...program");
 		System.out.pritnln("learning git.. trough terminal commands");
+		System.out.println("new change.. after previous git terminal controlled command execution");
 	}
 
 }
