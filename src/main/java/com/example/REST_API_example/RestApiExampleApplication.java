@@ -26,6 +26,7 @@ public class RestApiExampleApplication {
 		System.out.println("kaka aagutalev kada");
 		st=student.isPerfect(28);
 		System.out.println(st+"IDI MAMULUGA LEDU GADA...program");
+		System.out.pritnln("learning git.. trough terminal commands");
 	}
 
 }
